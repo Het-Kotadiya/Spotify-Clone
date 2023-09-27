@@ -1,0 +1,68 @@
+const player = document.getElementById("player");
+const play_pause = document.getElementById("play-pause");
+
+play_pause.addEventListener("click", () => {
+    if (player.paused) {
+        player.play();
+        play_pause.classList.add("pause");
+    } else {
+        player.pause();
+        play_pause.classList.remove("pause");
+    }
+
+});
+
+player.addEventListener("ended", () => {
+    play_pause.classList.remove("pause");
+});
+
+====================================================
+
+// Create an object to store audio elements
+const audioElements = {};
+const current_time = document.getElementsByClassName('current-time')[0]
+const total_time = document.getElementsByClassName('total-time')[0]
+
+// Get all elements with the class "play-pause"
+const playPauseElements = document.querySelectorAll(".play-pause");
+
+playPauseElements.forEach((playPauseElement, index) => {
+    // Add a click event listener for each play-pause element
+    playPauseElement.addEventListener("click", (event) => {
+        // Get the clicked element
+        const clickedElement = event.target;
+
+        // Find the associated audio source from the data attribute
+        const audioSrc = clickedElement.getAttribute("data-audio-src");
+
+        // Check if the audio element already exists, if not, create it
+        if (!audioElements[audioSrc]) {
+            console.log('src created')
+            audioElements[audioSrc] = new Audio(audioSrc);
+
+            // Handle audio ending for this specific audio element
+            audioElements[audioSrc].addEventListener("ended", () => {
+                console.log('src song ended')
+                clickedElement.classList.remove("pause");
+            });
+        }
+        const audioPlayer = audioElements[audioSrc];
+
+        current_time.innerHTML = audioPlayer.currentTime;
+        total_time.innerHTML = audioPlayer.totalTime;
+        console.log(audioPlayer.currentTime)
+        console.log(audioPlayer.totalTime)
+
+        if (audioPlayer.paused) {
+            console.log('played')
+            console.log(audioSrc)
+            audioPlayer.play();
+            clickedElement.classList.add("pause");
+        } else {
+            console.log('paused')
+            audioPlayer.pause();
+            // audioPlayer.currentTime = 0; // Reset the audio to the beginning
+            clickedElement.classList.remove("pause");
+        }
+    });
+});

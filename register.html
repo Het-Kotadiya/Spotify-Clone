@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Sign up - Spotify</title>
+    <link rel="stylesheet" href="register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <!-- Spotify logo -->
+      <a href="./home.html"><img src="./assets/spotify-logo.png" alt="" /></a>
+      <h2>Sign up for free to start listening</h2>
+
+      <!-- Facebook button -->
+      <div class="f-btn">
+        <button class="badge">
+          <i class="fa-brands fa-facebook icon"></i>
+          Sign up with Facebook
+        </button>
+      </div>
+
+      <!-- Google button -->
+      <div class="g-btn">
+        <button class="badge google">
+          <i class="fa-brands fa-google icon"></i>
+          Sign up with Google
+        </button>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Sign in form -->
+    <form action="#">
+      <div class="sing-up-form">
+        <!-- E-mail -->
+        <span>What's your email address?</span>
+        <input
+          type="text"
+          placeholder="Enter your email."
+          class="input-fields"
+        />
+
+        <!-- Password -->
+        <span>Create a password</span>
+        <input
+          type="text"
+          placeholder="Create a password."
+          class="input-fields"
+        />
+
+        <!-- Profile Name -->
+        <span>What should we call you?</span>
+        <input
+          type="text"
+          placeholder="Enter a profile name."
+          class="input-fields"
+        />
+        <p id="note">This appears on your profile.</p>
+
+        <!-- DOB -->
+        <span>What's your date of birth?</span>
+        <div class="dob">
+          <div class="year">
+            <p>Year</p>
+            <input type="text" class="year-input-field" placeholder="YYYY" />
+          </div>
+          <div class="month">
+            <p>Month</p>
+            <select>
+              <option selected disabled value="">Month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+          <div class="date">
+            <p>Day</p>
+            <input type="text" placeholder="DD" class="year-input-field" />
+          </div>
+        </div>
+
+        <!-- Gender -->
+        <span>What's your Gender?</span>
+        <div class="gender-container">
+          <div class="gender">
+            <input type="radio" name="gender-type" />
+            <label>Male</label>
+          </div>
+          <div class="gender">
+            <input type="radio" name="gender-type" />
+            <label>Female</label>
+          </div>
+          <div class="gender">
+            <input type="radio" name="gender-type" />
+            <label>Non-binary</label>
+          </div>
+          <div class="gender">
+            <input type="radio" name="gender-type" />
+            <label>Other</label>
+          </div>
+          <div class="gender">
+            <input type="radio" name="gender-type" />
+            <label>Prefer not to say</label>
+          </div>
+        </div>
+
+        <!-- Terms and condition -->
+        <div class="first-condition">
+          <input type="checkbox" />
+          <label>
+            I would prefer not to receive marketing message from Spotify
+          </label>
+        </div>
+        <div class="second-condition">
+          <input type="checkbox" />
+          <label>
+            Share my registration data with Spotify's content providers for<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;marketing purposes
+          </label>
+        </div>
+        <button value="submit" id="sign-up-btn">Sign up</button>
+        <span id="login-link">Have an account? <a href="login.html"> Login</a></span>
+      </div>
+      <div class="footer"></div>
+    </form>
+  </body>
+</html>
