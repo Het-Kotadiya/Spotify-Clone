@@ -280,6 +280,12 @@ a {
   cursor: pointer;
 }
 
+.recently-played{
+  display: flex;
+  
+}
+
+
 /* Card */
 * {
   margin: 0;

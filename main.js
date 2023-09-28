@@ -6,6 +6,9 @@ const progressBar = document.getElementsByClassName('progress-bar')[0];
 const progressSlider = document.getElementsByClassName('progress-bar')[0]; // Add the progress slider element
 const volumeSlider = document.querySelector('.volume-slider');
 
+const intialCard = document.getElementById('initial-song');
+const recentSongContainer = document.getElementById('recent-songs');
+
 // Function to format time in minutes and seconds
 function formatTime(timeInSeconds) {
     const minutes = Math.floor(timeInSeconds / 60);
