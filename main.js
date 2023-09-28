@@ -6,8 +6,7 @@ const progressBar = document.getElementsByClassName('progress-bar')[0];
 const progressSlider = document.getElementsByClassName('progress-bar')[0]; // Add the progress slider element
 const volumeSlider = document.querySelector('.volume-slider');
 
-const intialCard = document.getElementById('initial-song');
-const recentSongContainer = document.getElementById('recent-songs');
+
 
 // Function to format time in minutes and seconds
 function formatTime(timeInSeconds) {
@@ -15,6 +14,8 @@ function formatTime(timeInSeconds) {
     const seconds = Math.floor(timeInSeconds % 60);
     return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 }
+
+let currentAudio = null;
 
 // Get all elements with the class "play-pause"
 const playPauseElements = document.querySelectorAll(".play-pause");
@@ -62,16 +63,18 @@ playPauseElements.forEach((playPauseElement, index) => {
                 // Set the audio playback position based on the slider value
                 audioPlayer.currentTime = progressSlider.value;
             });
-
-            volumeSlider.addEventListener('input', () => {
-                audioPlayer.volume = volumeSlider.value;
-            });
         }
 
         const audioPlayer = audioElements[audioSrc];
 
         // Update the current time
         current_time.innerHTML = formatTime(audioPlayer.currentTime);
+
+        if (currentAudio && currentAudio !== audioPlayer) {
+            // Pause the currently playing audio if it's not the same as the clicked one
+            currentAudio.pause();
+            currentAudio = audioPlayer;
+        }
 
         if (audioPlayer.paused) {
             console.log('played')
