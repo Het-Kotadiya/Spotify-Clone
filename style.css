@@ -114,11 +114,13 @@ a {
 .box-p1 {
   font-size: 1rem;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .box-p2 {
   font-size: 0.85rem;
   opacity: 0.75;
+  margin-bottom: 10px;
 }
 
 .badge {
