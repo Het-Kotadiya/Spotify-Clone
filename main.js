@@ -4,6 +4,7 @@ const current_time = document.getElementsByClassName('current-time')[0];
 const total_time = document.getElementsByClassName('total-time')[0];
 const progressBar = document.getElementsByClassName('progress-bar')[0];
 const progressSlider = document.getElementsByClassName('progress-bar')[0]; // Add the progress slider element
+const volumeSlider = document.querySelector('.volume-slider');
 
 // Function to format time in minutes and seconds
 function formatTime(timeInSeconds) {
@@ -57,6 +58,10 @@ playPauseElements.forEach((playPauseElement, index) => {
             progressSlider.addEventListener("input", () => {
                 // Set the audio playback position based on the slider value
                 audioPlayer.currentTime = progressSlider.value;
+            });
+
+            volumeSlider.addEventListener('input', () => {
+                audioPlayer.volume = volumeSlider.value;
             });
         }
 

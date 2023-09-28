@@ -256,7 +256,6 @@ a {
 }
 
 .progress-bar {
-  /* width: 70%; */
   appearance: none;
   background-color: transparent;
   cursor: pointer;
@@ -275,6 +274,10 @@ a {
   background-color: #1bd760;
   border-radius: 50%;
   margin-top: -6px;
+}
+
+.volume-slider {
+  cursor: pointer;
 }
 
 /* Card */
