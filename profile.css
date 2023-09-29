@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+}
+
+/* Navbar */
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav img {
+  width: 131px;
+  height: 50px;
+  margin-left: 55px;
+}
+
+.list-item {
+  list-style: none;
+  font-size: 20px;
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.list-item:hover {
+  color: #1ed760;
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+/* Main Content */
+
+.main {
+  width: 784px;
+  height: 900px;
+  margin: auto;
+  margin-bottom: 70px;
+  padding: 100px 32px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+}
+
+.main h1 {
+  font-size: 48px;
+  padding-bottom: 25px;
+}
+
+.user-name span {
+  font-size: 14px;
+}
+
+.user-name {
+  padding-bottom: 8px;
+}
+
+.title {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+.data {
+  padding-bottom: 30px;
+}
+.data input,
+select {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #7f7f7f;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.data option {
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--background-base, #000);
+}
+
+.data input:hover {
+  border: 1px solid white;
+}
+
+#year {
+  width: 247px;
+  height: 48px;
+  padding: 8px 14px;
+}
+
+#month {
+  width: 190px;
+}
+
+#date {
+  width: 245px;
+}
+
+.dob {
+  display: flex;
+  justify-content: space-between;
+}
+
+#desc {
+  font-size: 14px;
+  text-align: center;
+}
+
+#check-box {
+  height: 15px;
+  width: 15px;
+}
+
+
+.badge {
+  background-color: #1ed760;
+  color: black;
+  /* border: 1px solid white; */
+  border: none;
+  position: relative;
+  right: 0;
+  border-radius: 100px;
+  padding: 6px 24px;
+  font-weight: 700;
+  cursor: pointer;
+  /* margin-top: 50px;
+  margin-left: 75%; */
+  height: 50px;
+  width: 160px;
+  font-size: 16px;
+  /* margin-left: 29rem; */
+}
+
+.badge:hover {
+  transform: scale(1.07);
+}
+
+#cancel {
+  background-color: transparent;
+  color: #919496;
+}
+
+.btn {
+  height: 100px;
+  width: 500px;
+  /* background-color: red; */
+  margin-top: 50px;
+  padding: 20px;
+  margin-left: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#cancel:hover {
+  color: white;
+}
+/* Footer */
+
+footer {
+  height: 560px;
+  background-color: black;
+  color: black;
+}
+
+.footer-content {
+  display: flex;
+  height: 500px;
+}
+
+.logo {
+  padding-top: 70px;
+  height: 245px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.logo img {
+  width: 132px;
+  height: 42px;
+}
+
+.footer-content h5 {
+  color: #919496;
+}
+
+.footer-content a {
+  color: white;
+}
+
+.company {
+  width: 160px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #ffa500; */
+  margin-top: 75px;
+  text-align: justify;
+}
+
+.company h5 {
+  padding: 15px 10px 10px 15px;
+}
+
+.company a {
+  padding: 15px;
+}
+
+.community {
+  width: 160px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #1ed760;
+}
+
+.community h5 {
+  padding: 15px 10px 10px 15px;
+}
+
+.community a {
+  padding: 15px;
+}
+
+.useful-link {
+  width: 160px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+.useful-link h5 {
+  padding: 15px 10px 10px 15px;
+}
+
+.useful-link a {
+  padding: 15px;
+}
+
+footer ul li {
+  color: #919496;
+  display: inline-block;
+  margin: 0 35px 0 0;
+  /* padding: 0 0 0 15px; */
+  font-size: 12px;
+  cursor: pointer;
+}
+footer ul li:hover {
+  color: #1ed760;
+}
+
+footer ul {
+  padding-left: 50px;
+}
+
+.social {
+  margin-left: 300px;
+  margin-top: 60px;
+  /* background-color: #1ed760; */
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social i {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social i:hover {
+  color: #1ed760;
+}
+
+.insta,
+.fb,
+.twitter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #222326;
+}

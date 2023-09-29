@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit profile - Spotify</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="nav">
+        <img src="./assets/black_white logo.png" alt="" />
+        <ul>
+          <li class="list-item">Premium</li>
+          <li class="list-item">Support</li>
+          <li class="list-item">Download</li>
+          <li class="list-item">
+            <i class="fa-regular fa-user icon"></i>Profile
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <div class="main">
+      <h1>Edit Profile</h1>
+      <div style="padding-bottom: 24px">
+        <div class="user-name">
+          <span>Username</span>
+        </div>
+        <p>13jsbweazvbwexufqeklsr9uer7d</p>
+      </div>
+
+      <div class="data">
+        <div class="title">Email</div>
+        <input type="email" placeholder="Email" />
+      </div>
+
+      <div class="data">
+        <div class="title">Gender</div>
+        <select>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="non-binary">Non binary</option>
+          <option value="other">Other</option>
+          <option value="not-to-say">Prefe not to say</option>
+        </select>
+      </div>
+      <div class="data">
+        <div class="title">Date of birth</div>
+        <div class="dob">
+          <input type="text" id="year" placeholder="YYYY" />
+          <select id="month">
+            <option value="01">Jan</option>
+            <option value="02">Feb</option>
+            <option value="03">Mar</option>
+            <option value="04">Apr</option>
+            <option value="05">May</option>
+            <option value="06">Jun</option>
+            <option value="07">Jul</option>
+            <option value="08">Aug</option>
+            <option value="09">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+          </select>
+          <input type="text" id="date" placeholder="DD" />
+        </div>
+      </div>
+
+      <div class="data">
+        <div class="title">Country or region</div>
+        <input type="text" />
+      </div>
+
+      <div id="conditon">
+        <input type="checkbox" id="check-box" />
+        <span id="desc"
+          >Share my registration data with Spotify's content providers for
+          marketing purposes.</span
+        >
+      </div>
+
+      <div class="btn">
+        <button class="badge" id="cancel">Cancel</button>
+        <button class="badge">Save Profile</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="logo">
+          <img src="./assets/black_white logo.png" alt="" />
+        </div>
+        <div class="company">
+          <h5>COMPANY</h5>
+          <a href="#">About</a>
+          <a href="#">Jobs</a>
+          <a href="#">For the Record</a>
+        </div>
+        <div class="community">
+          <h5>COMMUNITIES</h5>
+          <a href="#">For Artists</a>
+          <a href="#">Developers</a>
+          <a href="#">Advertising</a>
+          <a href="#">Investors</a>
+          <a href="#">Vendors</a>
+        </div>
+        <div class="useful-link">
+          <h5>USEFUL LINKS</h5>
+          <a href="#">Support</a>
+          <a href="#">Web PLayer</a>
+          <a href="#">Free Mobile App</a>
+        </div>
+        <div class="social">
+          <div class="insta">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="twitter">
+            <i class="fa-brands fa-square-twitter"></i>
+          </div>
+          <div class="fb">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+      </div>
+
+      <ul>
+        <li>Legal</li>
+        <li>Privacy Center</li>
+        <li>Privacy Policy</li>
+        <li>Cookies</li>
+        <li>About ads</li>
+        <li>Accessibility</li>
+      </ul>
+    </footer>
+  </body>
+</html>
