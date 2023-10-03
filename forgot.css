@@ -58,10 +58,12 @@ section h1 {
 
 .input-fields {
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
   width: 450px;
   height: 48px;
   border: 2px solid White;
   font-size: 1rem;
+  color: white;
   padding: 1rem;
   background-color: transparent;
 }
