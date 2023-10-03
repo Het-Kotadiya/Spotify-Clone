@@ -136,6 +136,10 @@ span {
   color: white;
 }
 
+#forgot-link:hover{
+  color: #12e15e;
+}
+
 .register-link {
   margin-top: 1rem;
   color: white;
